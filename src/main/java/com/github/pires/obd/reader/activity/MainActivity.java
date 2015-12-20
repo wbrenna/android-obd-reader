@@ -491,7 +491,8 @@ public class MainActivity extends RoboActivity implements ObdProgressListener, L
         endTrip();
 
         releaseWakeLockIfHeld();
-final String devemail = prefs.getString(ConfigActivity.DEV_EMAIL_KEY,null);
+        /*
+        final String devemail = prefs.getString(ConfigActivity.DEV_EMAIL_KEY,null);
         if (devemail != null) {
             DialogInterface.OnClickListener dialogClickListener = new DialogInterface.OnClickListener() {
                 @Override
@@ -508,9 +509,10 @@ final String devemail = prefs.getString(ConfigActivity.DEV_EMAIL_KEY,null);
                 }
             };
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
-            builder.setMessage("Where there issues?\nThen please send us the logs.\nSend Logs?").setPositiveButton("Yes", dialogClickListener)
+            builder.setMessage("Were there issues?\nIf so, please send us the logs.\nSend Logs?").setPositiveButton("Yes", dialogClickListener)
                     .setNegativeButton("No", dialogClickListener).show();
         }
+        */
 
         if (myCSVWriter != null) {
             myCSVWriter.closeLogCSVWriter();
